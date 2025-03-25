@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .collapsible {
+      color: white;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    /* Different background colors for each button */
+    .health-informatics { background-color: #FF6347; } /* Tomato */
+    .anatomy { background-color: #4682B4; } /* Steel Blue */
+    .pharmacology { background-color: #32CD32; } /* Lime Green */
+    .microbiology { background-color: #FFD700; } /* Gold */
+    .ethics { background-color: #8A2BE2; } /* Blue Violet */
+    .prevention { background-color: #FF4500; } /* Orange Red */
+    .communication { background-color: #2E8B57; } /* Sea Green */
+    .medical-law { background-color: #DA70D6; } /* Orchid */
+    .practical-exposure { background-color: #20B2AA; } /* Light Sea Green */
+    .final-assessment { background-color: #FF69B4; } /* Hot Pink */
+    
+    /* Active state */
+    .active, .collapsible:hover {
+      opacity: 0.8;
+    }
+
+    /* Content area style */
+    .content {
+      padding: 0 18px;
+      display: none;
+      overflow: hidden;
+      background-color: #f9f9f9;
+      border-left: 4px solid #ddd;
+      border-right: 4px solid #ddd;
+      border-bottom: 4px solid #ddd;
+    }
+
+    p {
+      padding: 10px;
+      font-size: 16px;
+      color: #333;
+    }
+
+    /* Style for links */
+    a {
+      text-decoration: none;
+      color: #1E90FF;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<h2 style="color: #4B0082;">Semester 2 Course Modules</h2>
+
+<button class="collapsible health-informatics">Health Informatics</button>
+<div class="content">
+  <ul>
+    <li><a href="#" target="_blank">Link to Health Informatics Module</a></li>
+  </ul>
+</div>
+
+<button class="collapsible anatomy">Anatomy and Physiology II</button>
+<div class="content">
+  <ul>
+    <li><a href="#" target="_blank">Link to Anatomy and Physiology II Module</a></li>
+  </ul>
+</div>
+
+<button class="collapsible pharmacology">Medical Pharmacology II</button>
+<div class="content">
+  <ul>
+    <li><a href="#" target="_blank">Link to Medical Pharmacology II Module</a></li>
+  </ul>
+</div>
+
+<button class="collapsible microbiology">Medical Microbiology and Parasitology II</button>
+<div class="content">
+  <ul>
+    <li><a href="#" target="_blank">Link to Medical Microbiology and Parasitology II Module</a></li>
+  </ul>
+</div>
+
+<button class="collapsible ethics">Healthcare Ethics and Legal Aspects</button>
+<div class="content">
+  <ul>
+    <li><a href="#" target="_blank">Link to Healthcare Ethics and Legal Aspects Module</a></li>
+  </ul>
+</div>
+
+<button class="collapsible prevention">Health Promotion and Disease Prevention</button>
+<div class="content">
+  <ul>
+    <li><a href="#" target="_blank">Link to Health Promotion and Disease Prevention Module</a></li>
+  </ul>
+</div>
+
+<button class="collapsible communication">Clinical Communication and Patient Care</button>
+<div class="content">
+  <ul>
+    <li><a href="#" target="_blank">Link to Clinical Communication and Patient Care Module</a></li>
+  </ul>
+</div>
+
+<button class="collapsible medical-law">Medical Law and Citizenship</button>
+<div class="content">
+  <ul>
+    <li><a href="#" target="_blank">Link to Medical Law and Citizenship Module</a></li>
+  </ul>
+</div>
+
+<button class="collapsible practical-exposure">Practical and Clinical Exposure</button>
+<div class="content">
+  <ul>
+    <li><a href="#" target="_blank">Link to Practical and Clinical Exposure Module</a></li>
+  </ul>
+</div>
+
+<button class="collapsible final-assessment">Final Assessment and Project Work</button>
+<div class="content">
+  <ul>
+    <li><a href="#" target="_blank">Link to Final Assessment and Project Work Module</a></li>
+  </ul>
+</div>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+
+  for (var i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+</script>
+
+</body>
+</html>
